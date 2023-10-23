@@ -250,13 +250,15 @@
 │      2       │ 1 │    3     │ 1 │    2    │     8    │ 1 │      1      │
 └──────────────┴───┴──────────┴───┴─────────┴──────────┴───┴─────────────┘
 </code></pre>
-<p>Individual parts:
-* <code>&lt;country-code&gt;</code>: A contract was signed under the law of this country.
-* <code>&lt;s&gt;</code>: Separator. Typically it's a hyphen ("-").
-* <code>&lt;provider-id&gt;</code>: The company with which the contract exists, unique per country.
-* <code>&lt;id-type&gt;</code>: Type of identifier. For CID it's value is "C", for EVSE it's "E".
-* <code>&lt;instance&gt;</code>: Uniquely references a customer account at the provider.
-* <code>&lt;check-digit&gt;</code>: An optional checksum digit to validate the CID.</p>
+<p>Individual parts:</p>
+<ul>
+<li><code>&lt;country-code&gt;</code>: A contract was signed under the law of this country.</li>
+<li><code>&lt;s&gt;</code>: Separator. Typically it's a hyphen ("-").</li>
+<li><code>&lt;provider-id&gt;</code>: The company with which the contract exists, unique per country.</li>
+<li><code>&lt;id-type&gt;</code>: Type of identifier. For CID it's value is "C", for EVSE it's "E".</li>
+<li><code>&lt;instance&gt;</code>: Uniquely references a customer account at the provider.</li>
+<li><code>&lt;check-digit&gt;</code>: An optional checksum digit to validate the CID.</li>
+</ul>
 <p>Since the CID is often exchanged between humans, it's important to have a checksum digit to detect typing errors. The ISO-15118 standard defines a checksum algorithm for the check digit. </p>
 
 
